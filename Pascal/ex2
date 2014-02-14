@@ -1,0 +1,14 @@
+program booleantest;
+process P1;
+  var flag1 : boolean;
+  var flag2 : boolean;
+  var C : Integer;
+begin
+  repeat
+    flag1 := true;
+    while flag2 do
+      null;  (* This is known as a busy-wait loop *)
+    C := C + 1;
+    flag1 := false;
+  forever
+end

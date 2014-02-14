@@ -1,0 +1,80 @@
+(* Here is how you might try and solve the problem. *)
+(* However, because the busy-waiting while loop *)
+(* accesses turn twice, it may change during the *)
+(* evaluation of while condition. *)
+(* This illustrates that developing general mutual exclusion *)
+(* algorithms with busy-waiting is very tricky. The actual solution is *)
+(* more complex -- check it out on the web if interested.*)
+(* Slide 37 of https://www.cs.tau.ac.il/~afek/Mutual_Exclusion.ppt explains the approach.*)
+
+program ThreeProcess;
+  var
+    flag1 : boolean;
+    flag2 : boolean;
+    flag3 : boolean;
+    turn : integer;
+
+  process P1;
+    var 
+      loopC : integer;
+  begin
+    loopC := 1;
+    while loopC < 3 do
+    begin
+      flag1 := true; (* I want to enter *)
+      turn := 2; (* give priority to process 2 *)
+      while (flag2 and (turn = 2)) or (flag3 and (turn = 3)) do
+        null;
+      writeln(' P1 critical section start P1');
+      writeln(' P1 critical section end P1');
+      flag1 := false;
+      writeln(' P1 NON critical section');
+      loopC := loopC + 1
+    end;
+      
+  end;
+
+  process P2;
+    var 
+      loopC : integer;
+  begin
+    loopC := 1;
+    while loopC < 3 do
+    begin
+      flag2 := true; (* I want to enter *)
+      turn := 3; (* give priority to process 1 *)
+      while (flag3 and (turn = 3)) or (flag1 and (turn = 1)) do
+        null;
+      writeln(' P2 critical section start P2');
+      writeln(' P2 critical section end P2');
+      flag2 := false;
+      writeln(' P2 NON critical section');
+      loopC := loopC + 1
+    end
+  end;
+
+  process P3;
+    var 
+      loopC : integer;
+  begin
+    loopC := 1;
+    while loopC < 3 do
+    begin
+      flag3 := true; (* I want to enter *)
+      turn := 1; (* give priority to process 1 *)
+      while (flag1 and (turn = 1)) or (flag2 and (turn = 2)) do
+        null;
+      writeln(' P3 critical section start P3');
+      writeln(' P3 critical section end P3');
+      flag3 := false;
+      writeln(' P3 NON critical section');
+      loopC := loopC + 1
+    end
+  end;
+begin
+  cobegin
+    P1;
+    P2;
+    P3
+  coend
+end.
