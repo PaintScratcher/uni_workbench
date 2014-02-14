@@ -1,0 +1,5 @@
+program Philosophers;
+	var philosophers : Integer;
+	var forks : Integer;
+
+
