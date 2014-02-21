@@ -1,6 +1,5 @@
-with Ada.Text_IO; use Ada.Text_IO;
 procedure ex1 is
-x : Integer := 10;
+C : Integer;
 begin
-Put((x));
+
 end ex1;

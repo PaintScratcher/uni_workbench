@@ -4,7 +4,7 @@ A --RTS=native
 P ZX
 R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnn
 
-U ex1%b			ex1.adb			0b0caee3 NE OO SU IL
+U ex1%b			ex1.adb			4b41475f NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
@@ -16,7 +16,7 @@ D a-stream.ads		20120510125756 2ca4ee37
 D a-tags.ads		20120510125759 6c0509d0
 D a-textio.ads		20120510125800 386df5d4
 D a-unccon.ads		20120510125801 f9eb8f06
-D ex1.adb		20140219124634 33615b37
+D ex1.adb		20140219130246 732cb28b
 D interfac.ads		20120510125815 129923ea
 D i-cstrea.ads		20120510125814 1bd72c32
 D system.ads		20120510125846 eb6e42ba
@@ -40,7 +40,8 @@ X 1 ada.ads
 16K9*Ada 19e8 9|1r6 1r23
 X 7 a-textio.ads
 49K13*Text_IO 471e16 9|1w10 1r27
-263U14*Put_Line 9|4s3
+242U14*Put 9|5s1
 X 9 ex1.adb
-2U11*ex1 2b11 5l5 5t8
+2U11*ex1 2b11 6l5 6t8
+3i1 x{integer}
 
