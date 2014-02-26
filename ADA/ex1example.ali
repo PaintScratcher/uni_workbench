@@ -4,7 +4,7 @@ A --RTS=native
 P ZX
 R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnvnvnnnnnnvnnnnnnnnnnnvnnnnnnnv1+nnnnnn
 
-U ex1example%b		ex1example.adb		d6605ac6 NE OO SU IL
+U ex1example%b		ex1example.adb		139c9e55 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -27,7 +27,7 @@ D a-tags.ads		20120510125759 6c0509d0
 D a-textio.ads		20120510125800 386df5d4
 D a-tiinio.ads		20120510125800 aa04e5d6
 D a-unccon.ads		20120510125801 f9eb8f06
-D ex1example.adb	20140221115811 202bd362
+D ex1example.adb	20140221120943 e5d717f1
 D interfac.ads		20120510125815 129923ea
 D i-c.ads		20120510125814 5421119b
 D i-cstrea.ads		20120510125814 1bd72c32

@@ -1,0 +1,46 @@
+V "GNAT Lib v2012"
+M P W=b
+A --RTS=native
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnn
+
+U ex2%b			ex2.adb			8dd84f7b NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20120510125803 3ffc8e18
+D a-except.ads		20120510125752 ec1b44c1
+D a-finali.ads		20120510125753 52ecdc1b
+D a-ioexce.ads		20120510125753 8b9de6cd
+D a-stream.ads		20120510125756 2ca4ee37
+D a-tags.ads		20120510125759 6c0509d0
+D a-textio.ads		20120510125800 386df5d4
+D a-unccon.ads		20120510125801 f9eb8f06
+D ex2.adb		20140226124733 b5b5baaf
+D interfac.ads		20120510125815 129923ea
+D i-cstrea.ads		20120510125814 1bd72c32
+D system.ads		20120510125846 eb6e42ba
+D s-crtl.ads		20120510125824 ac77b159
+D s-exctab.ads		20120510125824 66e51330
+D s-ficobl.ads		20120510125825 443b9d66
+D s-finmas.ads		20120510125825 b95bb341
+D s-finroo.ads		20120510125825 4ff27390
+D s-parame.ads		20120510125832 b6e20cc0
+D s-pooglo.ads		20120510125832 542f33d0
+D s-soflin.ads		20120510125833 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-stopoo.ads		20120510125834 7b8fbeee
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+D s-wchcon.ads		20120510125840 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 9|1r6 1r23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 9|1w10 1r27
+263U14*Put_Line 9|4s9
+X 9 ex2.adb
+2U11*ex2 2b11 5l5 5t8
+

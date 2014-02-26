@@ -4,7 +4,7 @@ procedure ex1example is
   task type P;
   task body P is
   begin
-    for I in 1..20 loop
+    for I in 1..500 loop
       C := C + 1;
     end loop;
   end P;
