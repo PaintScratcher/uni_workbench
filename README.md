@@ -1,4 +1,4 @@
 workbench
 =========
 
-Random code snippets, experiments or exercises. 
+Random code snippets, experiments or exercises. Mainly for the POPL module.
